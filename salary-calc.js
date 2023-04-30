@@ -16,6 +16,12 @@ function submitSalary(event) {
             <td>${idNum}</td>
             <td>${title}</td>
             <td>${annualSalary}</td>
+            <td><button onclick="deleteRow(event)">Delete</button></td>
         </tr>
     `;
+}
+
+function deleteRow(event) {
+    let row = event.target.parentElement.parentElement;
+    row.remove();
 }
