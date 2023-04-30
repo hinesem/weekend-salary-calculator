@@ -17,7 +17,7 @@
         </header>
         <div id="contentDiv">
             <h3>Add Employee</h3>
-            <form id="salary-form" onSubmit="submitSalary(event)">
+             <form id="salary-form" onSubmit="submitSalary(event); this.reset(); return false;"> <!--https://stackoverflow.com/questions/997774/how-do-you-clear-a-plain-html-form-after-onsubmit -->
                 First Name: <input id="fNameInput" type="text"/><br/>
                 Last Name: <input id="lNameInput" type="text"/><br/>
                 ID Number: <input id="idNumInput" type="number"/><br/>
@@ -38,7 +38,7 @@
                 </theadh>
                 <tbody id="salaryData"></tbody>
                     <tr>
-                        
+
                     </tr>
             </table>
         </div>
