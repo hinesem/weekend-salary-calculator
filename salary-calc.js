@@ -47,10 +47,13 @@ function submitSalary(event) {
     // console.log(totalSalary);
 
     totalSalary += annualSalary;
-
-
     salary.innerText = totalSalary;
 
+    let changeMonthlyCostColor = document.querySelector('.monthlyTotalHeader');
+    if (totalSalary > 20000) {
+        changeMonthlyCostColor.style.backgroundColor = 'red';
+    }
+    
 }
 ;
    
