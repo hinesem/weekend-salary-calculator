@@ -5,6 +5,7 @@ let salaryArray = [];
 
 let totalSalary = 0;
 
+const salary = document.querySelector('#monthlyTotal');
 
 function submitSalary(event) {
     event.preventDefault();
@@ -39,11 +40,17 @@ function submitSalary(event) {
     // })
     // console.log(annualSalaryArrayString);
 
-    for (let i = 0; i < salaryArray.length -1; i ++){
-    totalSalary = totalSalary + salaryArray[salaryArray.length -1];
-    console.log(totalSalary);
-    }
-    console.log(totalSalary);
+    // for (let i = 0; i < salaryArray.length ; i ++){
+    // totalSalary = totalSalary + salaryArray[salaryArray.length -1];
+    // console.log(totalSalary);
+    // }
+    // console.log(totalSalary);
+
+    totalSalary += annualSalary;
+
+
+    salary.innerText = totalSalary;
+
 }
 ;
    
