@@ -18,12 +18,12 @@
         <div id="contentDiv">
             <h3>Add Employee</h3>
              <form id="salary-form" onSubmit="submitSalary(event); this.reset(); return false;"> <!--https://stackoverflow.com/questions/997774/how-do-you-clear-a-plain-html-form-after-onsubmit -->
-                <input id="fNameInput" type="text" placeholder="First Name"/><br/>
-                <input id="lNameInput" type="text" placeholder="Last Name"/><br/>
-                <input id="idNumInput" type="number" placeholder="ID Number"/><br/>
-                <input id="titleInput" type="text" placeholder="Title"/><br/>
-                <input id="anualSalaryInput" type="number" placeholder="Anual Salary"/><br/>
-                <input type="submit" value="Submit"/>
+                <input class="form-input" id="fNameInput" type="text" placeholder="First Name"/><br/>
+                <input class="form-input"id="lNameInput" type="text" placeholder="Last Name"/><br/>
+                <input class="form-input"id="idNumInput" type="number" placeholder="ID Number"/><br/>
+                <input class="form-input"id="titleInput" type="text" placeholder="Title"/><br/>
+                <input class="form-input"id="anualSalaryInput" type="number" placeholder="Anual Salary"/><br/>
+                <input class="form-input"type="submit" value="Submit"/>
             </form>
             <h3>Employees</h3>
             <table id="employeesTable">
@@ -40,6 +40,12 @@
             </table>
             <div>
                 <h3 class="monthlyTotalHeader">Monthly total: <span id="monthlyTotal">0</span></h3>
+            </div>
+            <div class="inputFieldsHorizontal">
+                <form id="inputFieldsForm">
+                    <p></p>
+                </form>
+
             </div>
         </div>
         <script src="/Users/eric/Documents/assignments/weekend-salary-calculator/salary-calc.js"></script>
